@@ -1,0 +1,142 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkslategray61}{RGB}{61,61,61}
+\definecolor{peru22412844}{RGB}{224,128,44}
+\definecolor{seagreen5814558}{RGB}{58,145,58}
+\definecolor{steelblue49115161}{RGB}{49,115,161}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={Rosenbrock function losses for n=15, m=10},
+x grid style={darkgray176},
+xlabel={Method},
+xmin=-0.5, xmax=2.5,
+xtick style={color=black},
+xtick={0,1,2},
+xticklabels={SLSQP,NGOpt,NGOptRW},
+y grid style={darkgray176},
+ylabel={Loss},
+ymin=329325.196580988, ymax=5002076.51179707,
+ytick style={color=black},
+ytick={0,1000000,2000000,3000000,4000000,5000000,6000000},
+yticklabels={0,1,2,3,4,5,6}
+]
+\path [draw=darkslategray61, fill=steelblue49115161, semithick]
+(axis cs:-0.25,760321.430650171)
+--(axis cs:0.25,760321.430650171)
+--(axis cs:0.25,1790014.0669634)
+--(axis cs:-0.25,1790014.0669634)
+--(axis cs:-0.25,760321.430650171)
+--cycle;
+\path [draw=darkslategray61, fill=peru22412844, semithick]
+(axis cs:0.75,1434402.82928261)
+--(axis cs:1.25,1434402.82928261)
+--(axis cs:1.25,2465024.67056547)
+--(axis cs:0.75,2465024.67056547)
+--(axis cs:0.75,1434402.82928261)
+--cycle;
+\path [draw=darkslategray61, fill=seagreen5814558, semithick]
+(axis cs:1.75,1717825.72875411)
+--(axis cs:2.25,1717825.72875411)
+--(axis cs:2.25,2377786.39812568)
+--(axis cs:1.75,2377786.39812568)
+--(axis cs:1.75,1717825.72875411)
+--cycle;
+\addplot [semithick, darkslategray61]
+table {%
+0 760321.430650171
+0 541722.983636264
+};
+\addplot [semithick, darkslategray61]
+table {%
+0 1790014.0669634
+0 2208849.85741845
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.125 541722.983636264
+0.125 541722.983636264
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.125 2208849.85741845
+0.125 2208849.85741845
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+0 4789678.72474179
+0 4538775.73358324
+0 3850324.24714755
+0 3796455.3236507
+0 4018728.92816869
+};
+\addplot [semithick, darkslategray61]
+table {%
+1 1434402.82928261
+1 857770.73850608
+};
+\addplot [semithick, darkslategray61]
+table {%
+1 2465024.67056547
+1 3642326.31900244
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.875 857770.73850608
+1.125 857770.73850608
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.875 3642326.31900244
+1.125 3642326.31900244
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+1 4066886.76781129
+};
+\addplot [semithick, darkslategray61]
+table {%
+2 1717825.72875411
+2 1135090.99478846
+};
+\addplot [semithick, darkslategray61]
+table {%
+2 2377786.39812568
+2 2934296.51026477
+};
+\addplot [semithick, darkslategray61]
+table {%
+1.875 1135090.99478846
+2.125 1135090.99478846
+};
+\addplot [semithick, darkslategray61]
+table {%
+1.875 2934296.51026477
+2.125 2934296.51026477
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+2 4236870.04454054
+2 3916018.99366297
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.25 1321062.6154647
+0.25 1321062.6154647
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.75 1665935.49065727
+1.25 1665935.49065727
+};
+\addplot [semithick, darkslategray61]
+table {%
+1.75 1938096.24098735
+2.25 1938096.24098735
+};
+\end{axis}
+
+\end{tikzpicture}

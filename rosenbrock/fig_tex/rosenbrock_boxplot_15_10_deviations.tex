@@ -1,0 +1,144 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkslategray61}{RGB}{61,61,61}
+\definecolor{peru22412844}{RGB}{224,128,44}
+\definecolor{seagreen5814558}{RGB}{58,145,58}
+\definecolor{steelblue49115161}{RGB}{49,115,161}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={Deviations from constraint for n=15, m=10},
+x grid style={darkgray176},
+xlabel={Method},
+xmin=-0.5, xmax=2.5,
+xtick style={color=black},
+xtick={0,1,2},
+xticklabels={SLSQP,NGOpt,NGOptRW},
+y grid style={darkgray176},
+ylabel={Deviation},
+ymin=-0.369891332403837, ymax=7.65052768083591,
+ytick style={color=black}
+]
+\path [draw=darkslategray61, fill=steelblue49115161, semithick]
+(axis cs:-0.25,-0.000495102519312951)
+--(axis cs:0.25,-0.000495102519312951)
+--(axis cs:0.25,0)
+--(axis cs:-0.25,0)
+--(axis cs:-0.25,-0.000495102519312951)
+--cycle;
+\path [draw=darkslategray61, fill=peru22412844, semithick]
+(axis cs:0.75,0.158183227421116)
+--(axis cs:1.25,0.158183227421116)
+--(axis cs:1.25,1.50764180154119)
+--(axis cs:0.75,1.50764180154119)
+--(axis cs:0.75,0.158183227421116)
+--cycle;
+\path [draw=darkslategray61, fill=seagreen5814558, semithick]
+(axis cs:1.75,0.259276037700985)
+--(axis cs:2.25,0.259276037700985)
+--(axis cs:2.25,1.90300199005396)
+--(axis cs:1.75,1.90300199005396)
+--(axis cs:1.75,0.259276037700985)
+--cycle;
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+0 -0.000495102519312951
+0 -0.00110295994886656
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+0 0
+0 0.000250973381930919
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+-0.125 -0.00110295994886656
+0.125 -0.00110295994886656
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+-0.125 0.000250973381930919
+0.125 0.000250973381930919
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+0 -0.00130786756774626
+0 -0.00383851898534004
+0 -0.00532683180203009
+0 -0.00165340270832104
+0 -0.00173306262317396
+0 -0.00146843758656701
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+1 0.158183227421116
+1 0.03010129574443
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+1 1.50764180154119
+1 2.83958707007084
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+0.875 0.03010129574443
+1.125 0.03010129574443
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+0.875 2.83958707007084
+1.125 2.83958707007084
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+1 3.79308419877682
+1 7.2859631802341
+1 6.0101193154368
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+2 0.259276037700985
+2 0.00286714047096837
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+2 1.90300199005396
+2 3.39877670170834
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+1.875 0.00286714047096837
+2.125 0.00286714047096837
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+1.875 3.39877670170834
+2.125 3.39877670170834
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+2 4.45948901167794
+2 6.07227884887127
+2 4.52895392394039
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+-0.25 -6.66254236136865e-06
+0.25 -6.66254236136865e-06
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+0.75 0.40782484620955
+1.25 0.40782484620955
+};
+\addplot [semithick, darkslategray61, mark=*, mark size=2, mark options={solid,draw=black}]
+table {%
+1.75 0.419618538074083
+2.25 0.419618538074083
+};
+\end{axis}
+
+\end{tikzpicture}

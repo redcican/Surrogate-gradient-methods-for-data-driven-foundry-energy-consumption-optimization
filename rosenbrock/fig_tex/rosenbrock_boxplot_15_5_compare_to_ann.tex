@@ -1,0 +1,110 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkslategray61}{RGB}{61,61,61}
+\definecolor{peru22412844}{RGB}{224,128,44}
+\definecolor{seagreen5814558}{RGB}{58,145,58}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={Losses relative to SLSQP for n=15, m=5},
+x grid style={darkgray176},
+xlabel={Method},
+xmin=-0.5, xmax=1.5,
+xtick style={color=black},
+xtick={0,1},
+xticklabels={NGOpt,NGOptRW},
+y grid style={darkgray176},
+ylabel={Loss},
+ymin=-1044949.33266801, ymax=1008178.47188538,
+ytick style={color=black},
+ytick={-1250000,-1000000,-750000,-500000,-250000,0,250000,500000,750000,1000000,1250000},
+yticklabels={
+  \ensuremath{-}1.25,
+  \ensuremath{-}1.00,
+  \ensuremath{-}0.75,
+  \ensuremath{-}0.50,
+  \ensuremath{-}0.25,
+  0.00,
+  0.25,
+  0.50,
+  0.75,
+  1.00,
+  1.25
+}
+]
+\path [draw=darkslategray61, fill=peru22412844, semithick]
+(axis cs:-0.25,-24345.4318764281)
+--(axis cs:0.25,-24345.4318764281)
+--(axis cs:0.25,489698.317278774)
+--(axis cs:-0.25,489698.317278774)
+--(axis cs:-0.25,-24345.4318764281)
+--cycle;
+\path [draw=darkslategray61, fill=seagreen5814558, semithick]
+(axis cs:0.75,-29334.9438967863)
+--(axis cs:1.25,-29334.9438967863)
+--(axis cs:1.25,247886.843102831)
+--(axis cs:0.75,247886.843102831)
+--(axis cs:0.75,-29334.9438967863)
+--cycle;
+\addplot [semithick, darkslategray61]
+table {%
+0 -24345.4318764281
+0 -621687.820806046
+};
+\addplot [semithick, darkslategray61]
+table {%
+0 489698.317278774
+0 914854.480769321
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.125 -621687.820806046
+0.125 -621687.820806046
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.125 914854.480769321
+0.125 914854.480769321
+};
+\addplot [semithick, darkslategray61]
+table {%
+1 -29334.9438967863
+1 -316384.086205033
+};
+\addplot [semithick, darkslategray61]
+table {%
+1 247886.843102831
+1 658717.472650139
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.875 -316384.086205033
+1.125 -316384.086205033
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.875 658717.472650139
+1.125 658717.472650139
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=darkslategray61}, only marks]
+table {%
+1 -951625.341551946
+1 -860104.482414074
+1 838993.93356968
+};
+\addplot [semithick, darkslategray61]
+table {%
+-0.25 186517.940311495
+0.25 186517.940311495
+};
+\addplot [semithick, darkslategray61]
+table {%
+0.75 70633.9158381845
+1.25 70633.9158381845
+};
+\end{axis}
+
+\end{tikzpicture}
